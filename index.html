@@ -90,7 +90,7 @@
       </div>
     </section>
 
-    <!-- ⭐⭐⭐ TESTIMONIOS (AGREGADO) ⭐⭐⭐ -->
+    <!-- ⭐⭐⭐ TESTIMONIOS ⭐⭐⭐ -->
     <section class="section">
       <h2 class="section-title">Testimonios de Pacientes</h2>
 
@@ -137,9 +137,12 @@
 
       </div>
 
-      <!-- FORMULARIO NETLIFY -->
+      <!-- FORMULARIO NETLIFY (FUNCIONAL) -->
       <form name="reseñas" method="POST" data-netlify="true" id="form-reseña"
             class="card" style="margin-top:40px; max-width:600px; margin-left:auto; margin-right:auto;">
+
+        <!-- Campo oculto obligatorio -->
+        <input type="hidden" name="form-name" value="reseñas">
 
         <h3 style="color: var(--fucsia); margin-bottom:15px;">Enviar una reseña</h3>
 
@@ -196,5 +199,3 @@
 
 </body>
 </html>
-
-
