@@ -119,40 +119,36 @@
       </div>
 
       <!-- BOTONES PARA DEJAR RESEÑA -->
-      <div style="text-align:center; margin-top:40px; display:flex; flex-direction:column; gap:20px; align-items:center;">
+      <div class="review-buttons">
 
         <a href="https://wa.me/56958758398?text=Hola%20Melissa,%20quiero%20dejar%20una%20reseña%20sobre%20mi%20atención.%20"
-           class="btn-primary" target="_blank" style="width:260px; text-align:center;">
+           class="btn-primary" target="_blank">
           Dejar reseña por WhatsApp
         </a>
 
         <a href="TU_ENLACE_DE_GOOGLE_AQUI"
-           class="btn-secondary" target="_blank" style="width:260px; text-align:center;">
+           class="btn-secondary" target="_blank">
           Dejar reseña en Google
         </a>
 
-        <a href="#form-reseña" class="btn-secondary" style="width:260px; text-align:center;">
+        <a href="#form-reseña" class="btn-secondary">
           Enviar reseña en la página
         </a>
 
       </div>
 
       <!-- FORMULARIO NETLIFY (FUNCIONAL) -->
-      <form name="reseñas" method="POST" data-netlify="true" id="form-reseña"
-            class="card" style="margin-top:40px; max-width:600px; margin-left:auto; margin-right:auto;">
+      <form name="reseñas" method="POST" data-netlify="true" id="form-reseña" class="card form-card">
 
-        <!-- Campo oculto obligatorio -->
         <input type="hidden" name="form-name" value="reseñas">
 
-        <h3 style="color: var(--fucsia); margin-bottom:15px;">Enviar una reseña</h3>
+        <h3 class="form-title">Enviar una reseña</h3>
 
-        <input type="text" name="nombre" placeholder="Tu nombre" required
-               style="width:100%; padding:12px; margin-bottom:15px; border-radius:8px; border:1px solid var(--calipso); background:#1a0f24; color:white;">
+        <input type="text" name="nombre" placeholder="Tu nombre" required class="input-field">
 
-        <textarea name="mensaje" placeholder="Tu experiencia" required
-                  style="width:100%; padding:12px; height:120px; border-radius:8px; border:1px solid var(--calipso); background:#1a0f24; color:white;"></textarea>
+        <textarea name="mensaje" placeholder="Tu experiencia" required class="textarea-field"></textarea>
 
-        <button type="submit" class="btn-primary" style="margin-top:15px; width:100%;">
+        <button type="submit" class="btn-primary full-btn">
           Enviar reseña
         </button>
 
@@ -199,3 +195,4 @@
 
 </body>
 </html>
+
