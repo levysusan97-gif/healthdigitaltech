@@ -1,0 +1,230 @@
+/* PALETA PREMIUM */
+:root {
+--fucsia: #ff00c8;
+--morado: #7A00FF;
+--calipso: #00E5FF;
+--negro: #0b0b0d;
+--gris-oscuro: #1a1a1d;
+--blanco: #ffffff;
+}
+
+/* RESET */
+body {
+margin: 0;
+font-family: "Segoe UI", sans-serif;
+background: var(--negro);
+color: var(--blanco);
+}
+
+.container {
+width: 90%;
+max-width: 1100px;
+margin: auto;
+}
+
+.grid-2 {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+}
+
+.grid-3 {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+/* HEADER */
+.hero {
+text-align: center;
+padding: 40px 20px;
+}
+
+.logo {
+width: 120px;
+display: block;
+margin: 0 auto 20px auto;
+}
+
+.title {
+font-size: 2.6rem;
+color: var(--fucsia);
+}
+
+.subtitle {
+font-size: 1.3rem;
+color: var(--calipso);
+}
+
+.mission {
+max-width: 700px;
+margin: 20px auto;
+font-size: 1.1rem;
+color: var(--blanco);
+}
+
+.social-buttons {
+margin-top: 20px;
+}
+
+.btn {
+display: inline-block;
+padding: 12px 20px;
+margin: 6px;
+background: var(--morado);
+color: var(--blanco);
+text-decoration: none;
+border-radius: 8px;
+box-shadow: 0 0 15px rgba(122, 0, 255, 0.6);
+transition: 0.3s;
+}
+
+.btn:hover {
+background: var(--fucsia);
+box-shadow: 0 0 20px rgba(255, 0, 200, 0.7);
+}
+
+/* SOBRE MÍ */
+.about {
+padding: 50px 20px;
+text-align: center;
+}
+
+.about h2 {
+color: var(--fucsia);
+margin-bottom: 20px;
+}
+
+.profile-img {
+width: 260px;
+height: auto;
+border-radius: 12px;
+border: 4px solid var(--morado);
+box-shadow: 0 0 25px rgba(122, 0, 255, 0.5);
+margin: 20px auto;
+display: block;
+}
+
+/* SECCIÓN TENS */
+.tens-section {
+background: var(--gris-oscuro);
+border-radius: 12px;
+padding: 50px 20px;
+box-shadow: 0 0 20px rgba(255, 0, 200, 0.15);
+}
+
+.tens-section .section-title {
+color: var(--fucsia);
+}
+
+.tens-section p {
+color: var(--calipso);
+}
+
+.tens-section .checklist li {
+color: var(--blanco);
+margin-bottom: 10px;
+}
+
+/* SECCIÓN INFORMÁTICA BIOMÉDICA */
+.biomedica-section {
+background: var(--gris-oscuro);
+border-radius: 12px;
+padding: 50px 20px;
+margin-top: 40px;
+box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
+}
+
+.biomedica-section .section-title {
+color: var(--calipso);
+}
+
+.biomedica-section p {
+color: var(--blanco);
+}
+
+.biomedica-section .checklist li {
+color: var(--blanco);
+margin-bottom: 10px;
+}
+
+/* TESTIMONIOS */
+.testimonios {
+background: var(--gris-oscuro);
+border-radius: 12px;
+padding: 50px 20px;
+margin-top: 40px;
+box-shadow: 0 0 20px rgba(122, 0, 255, 0.25);
+}
+
+.testimonios .section-title {
+color: var(--fucsia);
+text-align: center;
+margin-bottom: 30px;
+}
+
+.testimonial {
+background: var(--negro);
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 0 15px rgba(0, 229, 255, 0.25);
+}
+
+.testimonial .quote {
+font-style: italic;
+color: var(--blanco);
+margin-bottom: 15px;
+}
+
+.testimonial .author {
+font-weight: bold;
+color: var(--calipso);
+text-align: right;
+}
+
+/* CONTACTO */
+.contact {
+padding: 40px 20px;
+text-align: center;
+}
+
+.contact h2 {
+color: var(--fucsia);
+}
+
+.contact p {
+margin: 10px 0;
+}
+
+.contact .btn {
+margin-top: 15px;
+}
+
+/* FOOTER */
+footer {
+text-align: center;
+padding: 20px;
+background: var(--gris-oscuro);
+color: var(--blanco);
+margin-top: 40px;
+border-top: 2px solid var(--morado);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+.grid-2, .grid-3 {
+grid-template-columns: 1fr;
+}
+
+.profile-img {
+width: 200px;
+}
+
+.title {
+font-size: 2rem;
+}
+
+.subtitle {
+font-size: 1rem;
+}
+}
